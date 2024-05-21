@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="../assests/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Take Care | Dashboard</title>
+</head>
+<body>
+    <main id="profile-page">
+        <section id="left">
+            <h1>
+                <div id="logo"></div>
+                <span>TAKE CARE</span>
+            </h1>
+            <a href="profile.html"><button ><img src="assets/home.svg" width="24" height="24" alt="">New</button></a>
+            <a href="location.html"><button style="background-color: transparent;color:#8A8A8A;"><img src="assets/money.svg"  width="24" height="24" alt="">Location</button></a>
+            <a href="history.html"><button style="background-color: transparent;color:#8A8A8A;"><img src="assets/history.svg"  width="24" height="24" alt="">History</button></a>
+        </section>
+        <section id="right">
+            <section id="top">
+                <input type="search" placeholder="Search by name, contact or tag">
+                <div>
+                    <img src="assets/noti.svg" alt="">
+                    <img src="assets/avatar.svg" alt="">
+                </div>
+            </section>
+            <section id="bottom">
+                <p id="hi_name"></p>
+                <h1>Welcome back👋</h1>
+                <div id="crops">
+                    
+                </div>
+                <div id="add_btn"><img src="assets/plus.svg" alt=""></div>
+                <div id="modal">
+                    <section id="modal_box" class="animate__animated">
+                        <h2>ADD CHILD</h2>
+                        <form action="">
+                            <input type="text" required placeholder="Name" id="name_of_field">
+                            <input type="number" required placeholder="Id" id="area">
+                            <input type="number" required placeholder="Phone" id="city">
+                            <select name="rops" required id="choosecrop">
+                                <option value="">Gender</option>
+                                <option value="Boy">Male</option>
+                                <option value="Girl">Female</option>
+                              </select>
+                            <input type="submit"  value="Add +" id="add_submit">
+                        </form>
+                    </section>
+                </div>
+                <div id="modal2">
+                    <section id="modal_box2" class="animate__animated">
+                        <h2 id="modal_heading"></h2>
+                        <p id="wheat_sqft"></p>
+                        <p id="ready"></p>
+                        <p id="temp"></p>
+                        <p id="water"></p>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="javascript/profile.js"></script>
+</body>
+</html>

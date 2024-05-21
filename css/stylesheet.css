@@ -1,0 +1,775 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  width: 5px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 5px;
+  background: #FFC800;
+  border-radius: 10px;
+}
+
+header {
+  width: 100%;
+  position: relative;
+}
+
+header nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffffab;
+  padding: 2.5rem 4.5rem;
+}
+
+header nav div {
+  width: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 35px;
+}
+
+header nav div h1 {
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 2.4rem;
+  letter-spacing: 0.01em;
+  color: #2B454E;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+header nav ul {
+  width: 18.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 35px;
+}
+
+header nav ul li {
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+}
+
+header nav ul li a {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+header nav ul li:nth-child(1) {
+  background-color: #DCDCDC;
+}
+
+header nav ul li:nth-child(1) a {
+  color: #2B454E;
+}
+
+header nav ul li:nth-child(2) {
+  background-color: #2B454E;
+}
+
+header nav ul li:nth-child(2) a {
+  color: #ffffff;
+}
+
+header section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header section #left {
+  max-width: 40%;
+  min-width: 75rem;
+  height: 100vh;
+  padding: 0rem 0rem 0rem 9.2rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+header section #left div h1 {
+  font-family: 'Inter';
+  font-weight: 800;
+  font-size: 6.8rem;
+  -webkit-font-feature-settings: 'salt' on, 'liga' off;
+          font-feature-settings: 'salt' on, 'liga' off;
+  color: #375A64;
+  padding-bottom: 1.6rem;
+}
+
+header section #left div h1 span {
+  color: #FFC800;
+}
+
+header section #left div p {
+  width: 54rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.8rem;
+  -webkit-font-feature-settings: 'salt' on, 'liga' off;
+          font-feature-settings: 'salt' on, 'liga' off;
+  color: #18191F;
+  padding-bottom: 3.2rem;
+}
+
+header section #left div button {
+  padding: 1.2rem 3.2rem;
+  background: #2B454E;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+header section #right {
+  width: 70%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+header section #right .hero-image {
+  height: auto;
+  width: 130%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.numbers {
+  width: 100%;
+  padding: 7.1rem 15rem 27.5rem 15rem;
+  background-color: #1A2E35;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.numbers div {
+  padding-bottom: 4rem;
+}
+
+.numbers div h3 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 4.8rem;
+  color: #FFC800;
+}
+
+.numbers div p {
+  width: 100%;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 2rem;
+  color: #FFC800;
+}
+
+.whyUs {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.whyUs .whyus-con {
+  padding: 7rem 10rem 14.5rem 10rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1.67594px 6.79641px 68px rgba(0, 0, 0, 0.07);
+          box-shadow: 1.67594px 6.79641px 68px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  -webkit-transform: translateY(-167px);
+          transform: translateY(-167px);
+}
+
+.whyUs .whyus-con h1 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 800;
+  font-size: 4rem;
+  color: #375A64;
+  padding-bottom: 8rem;
+}
+
+.whyUs .whyus-con h1 span {
+  color: #FFC800;
+}
+
+.whyUs .whyus-con p {
+  width: 65rem;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #9E9E9E;
+  position: relative;
+}
+
+.whyUs .whyus-con p:before {
+  content: "";
+  width: 70.69px;
+  height: 60px;
+  background: url(../assests/comma.svg) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -40px;
+  left: -36px;
+  z-index: -1;
+}
+
+.points {
+  width: 100%;
+  padding: 0px 14rem 18rem 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.points .left {
+  width: 45%;
+  background: url(../assests/mobile.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.points .right {
+  width: 45%;
+  position: relative;
+}
+
+.points .right h1 {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 7rem;
+  color: #1A2E35;
+  padding-bottom: 2rem;
+}
+
+.points .right h1 span {
+  color: #FFC800;
+}
+
+.points .right p {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #5B5D63;
+  padding-bottom: 2rem;
+}
+
+.points .right ul {
+  list-style: disc !important;
+}
+
+.points .right ul li {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.points .right ul li img {
+  margin-right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.points .right::before {
+  content: "";
+  width: 8.5rem;
+  height: 52rem;
+  background: url(../assests/arrow.svg) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: -13.6rem;
+}
+
+.points::before {
+  content: "";
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  width: 10rem;
+  height: 17rem;
+  position: absolute;
+  top: -143px;
+  left: -13px;
+  background: url(../assests/location.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.points::after {
+  content: "";
+  overflow: hidden;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  width: 10rem;
+  height: 17rem;
+  position: absolute;
+  bottom: 0px;
+  right: -13px;
+  background: url(../assests/location.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.features {
+  width: 100%;
+  padding: 8rem 10rem;
+  position: relative;
+}
+
+.features h1 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 800;
+  font-size: 4.8rem;
+  padding-bottom: 4rem;
+  color: #18191F;
+}
+
+.features #feature-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 20rem;
+}
+
+.features #feature-cards div {
+  width: 300px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.features #feature-cards div h2 {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #18191F;
+  padding-bottom: 1rem;
+}
+
+.features #feature-cards div p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #18191F;
+}
+
+.features::after {
+  content: "";
+  width: 30rem;
+  height: 30rem;
+  background: url(../assests/design1.svg) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 40px;
+  left: -18rem;
+  z-index: -1;
+}
+
+.features::before {
+  content: "";
+  width: 30rem;
+  height: 30rem;
+  background: url(../assests/design2.svg) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: -8rem;
+  z-index: -1;
+}
+
+#footer-image {
+  width: 100%;
+  height: 25rem;
+  background: url(../assests/footer.svg) left bottom no-repeat;
+  background-size: contain;
+}
+
+footer {
+  padding: 2rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  background-color: #1A2E35;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #D9DBE1;
+}
+
+.signup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  display: none;
+  place-items: center;
+}
+
+.signup form {
+  width: 50rem;
+  background-color: white;
+  -webkit-box-shadow: 9.39709px 25.3119px 63px rgba(0, 0, 0, 0.01);
+          box-shadow: 9.39709px 25.3119px 63px rgba(0, 0, 0, 0.01);
+  border-radius: 2rem;
+  padding: 3.9rem 5.8rem;
+}
+
+.signup form h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 39px;
+  text-align: center;
+  -webkit-font-feature-settings: 'salt' on, 'liga' off;
+          font-feature-settings: 'salt' on, 'liga' off;
+  padding-bottom: 5rem;
+}
+
+.signup form p {
+  position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.signup form input[type=text], .signup form input[type=password], .signup form input[type=submit] {
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 1rem 1rem 1rem 5rem;
+  outline: none;
+  border: 2px solid #E2E2E2;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #A0A0A0;
+}
+
+.signup form input[type=submit] {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+  padding: 1.2rem 0rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.signup form input[type=checkbox] {
+  border: 2px solid #E2E2E2;
+  margin-right: .9rem;
+}
+
+.signup form #email::before {
+  content: "";
+  position: absolute;
+  top: 2.7rem;
+  left: .7rem;
+  width: 3rem;
+  height: 3rem;
+  background: url("../assests/mail.svg") center center no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
+
+.signup form #password::before {
+  content: "";
+  position: absolute;
+  top: 2.7rem;
+  left: .7rem;
+  width: 3rem;
+  height: 3rem;
+  background: url("../assests/password.svg") center center no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
+
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  display: none;
+  place-items: center;
+}
+
+.login form {
+  width: 50rem;
+  background-color: white;
+  -webkit-box-shadow: 9.39709px 25.3119px 63px rgba(0, 0, 0, 0.01);
+          box-shadow: 9.39709px 25.3119px 63px rgba(0, 0, 0, 0.01);
+  border-radius: 2rem;
+  padding: 3.9rem 5.8rem;
+}
+
+.login form h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 39px;
+  text-align: center;
+  -webkit-font-feature-settings: 'salt' on, 'liga' off;
+          font-feature-settings: 'salt' on, 'liga' off;
+  padding-bottom: 5rem;
+}
+
+.login form p {
+  position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.login form input[type=text], .login form input[type=password], .login form input[type=submit] {
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 1rem 1rem 1rem 5rem;
+  outline: none;
+  border: 2px solid #E2E2E2;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #A0A0A0;
+}
+
+.login form input[type=submit] {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+  padding: 1.2rem 0rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.login form input[type=checkbox] {
+  border: 2px solid #E2E2E2;
+  margin-right: .9rem;
+}
+
+.login form #email::before {
+  content: "";
+  position: absolute;
+  top: 2.7rem;
+  left: .7rem;
+  width: 3rem;
+  height: 3rem;
+  background: url("../assests/mail.svg") center center no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
+
+.login form #password::before {
+  content: "";
+  position: absolute;
+  top: 2.7rem;
+  left: .7rem;
+  width: 3rem;
+  height: 3rem;
+  background: url("../assests/password.svg") center center no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  header nav div {
+    width: 22rem;
+  }
+  header section #left {
+    max-width: 30%;
+    min-width: 60rem;
+  }
+  #feature-cards {
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+  }
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 35%;
+  }
+  header nav div {
+    width: 25rem;
+  }
+  .whyus-con {
+    -webkit-transform: translateY(-120px) !important;
+            transform: translateY(-120px) !important;
+  }
+  .points {
+    padding: 0px 8rem 18rem 8rem;
+  }
+}
+
+@media (max-width: 594px) {
+  header nav div {
+    padding-left: 0;
+    width: 18rem;
+  }
+  header section {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: 800px;
+  }
+  header section #left, header section #right {
+    width: 100%;
+  }
+  header section #left {
+    padding: 0rem 0rem 0rem 4rem;
+  }
+  header section #left div h1 {
+    font-size: 6rem;
+  }
+  .whyUs .whyus-con p {
+    width: 35rem;
+  }
+  .points {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 5rem 18rem 5rem;
+  }
+  .points .left {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 4rem;
+  }
+  .points .right {
+    width: 100%;
+  }
+  .points::before {
+    top: -68px;
+  }
+  #feature-cards {
+    padding-bottom: 2rem !important;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="shortcut icon" href="assests/logo.svg" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <title>Take Care | Home</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <div>
+                    <img src="assests/logo.svg" alt="logo">
+                    <h1>TAKE CARE</h1>
+                </div>
+                <ul>
+                    <li id="logbtn"><a href="">Login</a></li>
+                    <li id="signbtn"><a href="">Signup</a></li>
+                </ul>
+            </nav>
+            <section>
+                <aside id="left">
+                    <div>
+                        <h1>Take your child everywhere, <span>Safe</span></h1>
+                        <p>History will judge us by the difference we make in the everyday lives of children.</p>
+                        <button id="signbtn2">Get Started</button>
+                    </div>
+                </aside>
+                <aside id="right">
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_5eofrmfd.json"  background="transparent"  speed="1" class="hero-image" loop autoplay></lottie-player>
+                </aside>
+            </section>
+        </header>
+        <section class="numbers">
+            <div>
+                <h3>100k+</h3>
+                <p>Users Active</p>
+            </div>
+            <div>
+                <h3>20+</h3>
+                <p>Trusted customers</p>
+            </div>
+            <div>
+                <h3>2+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div>
+                <h3>1000+</h3>
+                <p>Lives Saved</p>
+            </div>
+        </section>
+        <section class="whyUs">
+            <div class="whyus-con">
+                <h1>Why <span>Choose Us?</span></h1>
+                <p>We provide the real time location of your child. It also tells you the type of location in which your children is present (Red, Orange, Green). Your child can make emergency calls, send messages to police on a single click. We also provide the history of your child’s location for better parenting.</p>
+            </div>
+        </section>
+        <section class="points">
+            <aside class="left"></aside>
+            <aside class="right">
+                <h1>No more Restrictions for <span>children</span></h1>
+                <p>Why should we fear them, they should fear us. Because of our app there will be no restrictions to our children. Just one click for emergency.</p>
+                <ul>
+                    <li><img src="assests/tick.svg" alt="tick">Get notification on alerts</li>
+                    <li><img src="assests/tick.svg" alt="tick">Sync across devices</li>
+                    <li><img src="assests/tick.svg" alt="tick">Emergency police call</li>
+                    <li><img src="assests/tick.svg" alt="tick">Get History of locations</li>
+                </ul>
+            </aside>
+        </section>
+        <section class="features">
+            <h1>Features</h1>
+            <div id="feature-cards">
+                <div>
+                    <dotlottie-player src="https://assets3.lottiefiles.com/dotlotties/dlf10_hv3k59xq.lottie"  background="transparent"  speed="1"  style="width: 100%;" loop autoplay></dotlottie-player>
+                    <h2>Live Location</h2>
+                    <p>Get real time location of your child on a single click.</p>
+                </div>
+                <div>
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_j1dsdeia.json"  background="transparent"  speed="1"  style="width: 100%;" loop autoplay></lottie-player>
+                    <h2>Emergency calls</h2>
+                    <p>Direct emergency calls to police stations and nearby holders of this application.</p>
+                </div>
+                <div>
+                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_z4cshyhf.json"  background="transparent"  speed="1"  style="width: 100%;" loop autoplay></lottie-player>
+                    <h2>History</h2>
+                    <p>Get the history of location where your child have been.</p>
+                </div>
+            </div>
+        </section>
+        <section id="footer-image">
+            
+        </section>
+        <footer>© 2023 Akhil. All rights reserved</footer>
+    </main>
+    <section class="signup" id="signup">
+        <form id="form" class="animate__animated">
+            <h3>Get started with<br>Take Care.</h3>
+            <p id="email" >Username</p>
+            <input type="text" required="required" id="sign_email" placeholder="Akhil">
+            <p id="password" >Password</p>
+            <input type="password" id="sign_password" required="required" placeholder="Akhil@2134.">
+            <p id="error"></p>
+            <input type="submit" id="signup-button" onclick="signup2()" id="register" value="Register" style="border: none; background: #1A2E35; color: white; ">
+        </form>
+    </section>
+    <section class="login" id="login" >
+        <form id="form2" class="animate__animated">
+            <h3>Login with<br>Take Care.</h3>
+            <p id="email">Username</p>
+            <input type="text" required="required" id="login_email" placeholder="Akhil">
+            <p id="password">Password</p>
+            <input type="password" required="required" id="login_password" placeholder="Akhil@2134.">
+            <p id="error"></p>
+            <input type="submit" id="login-button"  value="login" style="border: none; background: #1A2E35; color: white; ">
+        </form>
+    </section>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
